@@ -1,9 +1,6 @@
 --[[
-    animated hitlog recoded
-
-    remade animation
-
-    author: pred#2448
+   Original author: pred#2448
+   Edited by Niqht
 ]]
 
 local queue = {}
