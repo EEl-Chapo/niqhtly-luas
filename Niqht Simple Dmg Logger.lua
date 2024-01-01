@@ -1,6 +1,9 @@
 --[[
-    Original author: pred#2448
-     Editied By Niqht
+    animated hitlog recoded
+
+    remade animation
+
+    author: pred#2448
 ]]
 
 local queue = {}
@@ -36,13 +39,15 @@ local function paint_logs()
     
     local totalHeight = #queue* -1
     local yOffset = 10
+    local xRatio = 0.5
+
     for i = #queue, math.max(#queue - 2, 1), -1 do
     local v = queue[i]
     local alpha = 255
     local text = v.string
     local y_pos = floor(y / 2) + yOffset - totalHeight + ((#queue - i + (-1)) * 11)
     draw.Color(27, 185, 0, alpha)
-    draw.Text(890, y_pos, text)
+    draw.Text(x * xRatio, y_pos, text)
     end
     end    
 
