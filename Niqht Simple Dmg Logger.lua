@@ -39,7 +39,7 @@ local function paint_logs()
     
     local totalHeight = #queue* -1
     local yOffset = 10
-    local xRatio = 0.5
+    local xRatio = 0.45
 
     for i = #queue, math.max(#queue - 2, 1), -1 do
     local v = queue[i]
